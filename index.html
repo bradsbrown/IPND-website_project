@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Notes</title> <!-- This is the title of your page (what appears in the name of a browser tab) -->
+    <link rel="stylesheet" href="style.css"> <!-- This line links your CSS stylesheet to your HTML (see Lesson 1.3) -->
+  </head>
+  <body>
+    <div class="title">
+      My Notes for HTML/CSS
+      <img class="image" src="images/css-code.png" alt="css code">
+    </div>
+    <div class="section">
+      <h1>Index</h1>
+      <div class="description">
+        <span class="desc-head">Index</span><br>
+        <ul>
+          <li>
+            <a href="#s0-0">Stage 0 - Intro/Basic Web Concepts</a>
+            <ul>
+              <li><a href="#s0-1">Background</a></li>
+              <li><a href="#s0-2">Inline vs. Block</a></li>
+              <li><a href="#s0-3">References</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#s1-0">Stage 1 - HTML/CSS</a>
+            <ul>
+              <li><a href="#s1-1">Purpose of...</a></li>
+              <li><a href="#s1-2">HTML</a></li>
+              <li><a href="#s1-3">CSS</a></li>
+              <li><a href="#s1-4">Check Your Code</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#s2-0">Stage 2</a>
+            <ul>
+              <li><a href="#s2-1">Introduction to Python</a></li>
+              <li><a href="#s2-2">Fuctions and Loops</a></li>
+              <li><a href="#s2-3">Debugging</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><br>
+    </div>
+    <div class="section">
+      <h1>Stage 0</h1><a name="s0-0"></a>
+      <div class="description">
+        <span class="desc-head">Background</span><a name="s0-1"></a><br>
+        The web works via a <em>server</em> sending html via the internet to your
+        computer's <em>browser</em>, which uses the encoded text to format a web page.<br>
+        The html can include various <b>tags</b> and <b>elements</b>, which are encoded
+        information the computer uses to ehance the text with formatting, images, etc.
+      </div>
+      <div class="description">
+        <span class="desc-head">Inline vs. block</span><a name="s0-2"></a><br>
+        Tags can be either <em>inline</em> or <em>block</em>, which means they either
+        stay in the flow of the text, or they basically "draw a box" around a piece of content.
+      </div>
+      <div class="description">
+        <span class="desc-head">References</span><a name="s0-3"></a><br>
+        <a href="http://www.w3schools.com/html/default.asp">This site</a> is a great
+          resource for HTML tags and how they are used.
+      </div><br>
+    </div>
+    <div class="section">
+      <h1>Stage 1</h1><a name="s1-0"></a>
+      <div class="description">
+        <span class="desc-head">Purpose of:</span><a name="s1-1"></a>
+          <ul>
+            <li>HTML - actual content</li>
+            <li>CSS - style/design formatting</li>
+            <li>Javascript - Interactive components</li></ul><br>
+      </div>
+      <div class="description">
+        <span class="desc-head">HTML</span><a name="s1-2"></a>
+          <ul>
+            <li>HTML works in a tree-like structure</li>
+            <li>Chrome Dev Tools will show the HTML for a page</li>
+                <li>it highlights the relevant section on the page</li>
+                <li>it will also sync with the style elements of that section</li>
+            <li>All HTML elements are rectangles</li>
+            <li>Element are labeled with class names for css to describe formats</li>
+            <li>"boxing" helps lay out the positioning of elements on the page</li>
+          </ul>
+      </div>
+      <div class="description">
+        <span class="desc-head">CSS</span><a name="s1-3"></a>
+        <ul>
+          <li>Lead a class description with .classname, then include style in braces.</li>
+          <li>You can define a class as "*" (no leading period) to describe default style elements for the page.</li>
+          <li>For standard tags such as "b", "en", "h1", you can denote custom styling in the same format (no leading period)</li>
+          <li>Styles from the most specific level will override those up the higherarchy.</li>
+          <li><a href="http://www.w3schools.com/cssref/default.asp">This</a> is a great site for css reference.</li>
+        </ul>
+      </div>
+      <div class="description">
+        <span class="desc-head">Check Your Code</span><a name="s1-4"></a>
+        <ul>
+          <li>You can use <a href="https://validator.w3.org/#validate_by_input">this site</a> to validate your HTML code.</li>
+          <li><a href="http://jigsaw.w3.org/css-validator/#validate_by_input">This one</a> will check your CSS.</li>
+        </ul>
+      </div><br>
+    </div>
+    <div class="section">
+      <h1>Section 2</h1><a name="s2-0"></a>
+      <div class="description">
+        <div class="desc-head">Introduction to Python</div><a name="s2-1"></a>
+        <ul>
+          <li>Python is a coding language, with a specific syntax that must be followed to prevent errors.</li>
+          <li>variables are defines using the syntax [variable name] = [number]</li>
+          <li>Strings are defined in the same way, but require quote mark (single or double) to indicate they are treated as text strings rather than integers or floats.</li>
+          <li>While you can do standard math with variables, using a '+' on strings will concatenate them, or using a '*' will repeat it.</li>
+          <li>You can use indexing to return certain positions of a string - string[0:3] would give you the first 3 characters (starting at position 0,ending at position 3 exclusive)</li>
+          <li>string.find('text_to_find') will return the starting position of the text to find</li>
+          <li>you can also give .find a second variable to have it start searching at that position in the string - string.find('text_to_find',5) will start looking at position 5</li>
+        </ul></div>
+      <div class="description">
+        <div class="desc-head">Functions and Loops</div><a name="s2-2"></a>
+          <ul>
+            <li>a function is a block of code that executes when called, and can take parameters to pass into the code.</li>
+            <li>Any number of parameters can be passed in, but the number must be defined in the def for the function, and the quantity passed in when called must match.</li>
+            <li>A test evaluates an expression, and returns True or False. <, >, ==, != are common tests.</li>
+            <li>An 'if' statement operates code if a test is met, and can also have an 'else' block to run if the test returns False.</li>
+            <li>Where an 'if' statement only passes through once, a 'while' loop runs reapeatedly as long as the test is True.</li>
+            <li>A 'break' statement kicks the code out of the loop, and continues to run the code after the loop.</li>
+          </ul>
+      </div>
+      <div class="description">
+        <div class="desc-head">Debugging</div><a name="s2-3"></a>
+          <ul>
+            <li>Googling for error messages will help find others who have solved this problem.</li>
+            <li>You can also compare to working code from others.</li>
+            <li>Sometimes dropping some print commands for intermediary variables/strings will help you see what your code is doing, and correct some wrong assumptions you may have.</li>
+            <li>Some form of versioning is important to be able to look back at old code and see where you went wrong. This can be simply saving files, or using a more comprehensive system like Git.</li>
+            <li>Commenting your code well will be a huge help when you go back to look at your work, especially if you haven't worked on a section in a while.</li>
+          </ul>
+      </div>
+      <div class='description'>
+        <div class='desc-head'>Lists</div><a name="s2-4"></a>
+        <ul>
+          <li>Lists are a conceptual extension of strings in a way, except that where a string is a 'list' of characters, a list can contain anything - strings, values, other lists, etc.</li>
+          <li>You can access values of a list by indexing using brackets, just as you could access a character in a string.</li>
+          <li>Aliasing links another variable name to the same list, so any changes made to a value via one alias will affect all variable names tied to that list.</li>
+          <li> '.append' allows you to add new items to the end of a list, len() gives you the top-level count of entries in a list, '+' concatenates items to a list.</li>
+          <li>If you append a list to a list, the appended list will be appended as a single entry, whereas '+'-ing the two lists will create a new list with all entries of the two.</li>
+          <li>'for item in list' is a valid syntax that loops the code below it for all items in a list.</li>
+          <li> 'in' and 'not in' can also be used as tests that return True or False (useful for if statements).</li>
+      </div><br>
+    </div>
+  </body>
+</html>
